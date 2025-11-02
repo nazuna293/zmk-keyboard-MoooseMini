@@ -15,6 +15,8 @@
 [ビルドガイド](https://github.com/ataruno/MoooseMini/blob/main/doc/build_guide.md)  
 [ZMK-Configリポジトリ](https://github.com/ataruno/zmk-MoooseMini)  
 
+![](keymap-drawer/MoooseMini.svg)
+
 ### FIRMWARE  
 Special thanks to the people behind the ZMK project:  
 - [Pete Johanson](https://github.com/petejohanson)  
