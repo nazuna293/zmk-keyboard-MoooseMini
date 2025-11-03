@@ -34,7 +34,7 @@
                <&key_physical_attrs  70  70  265  315       0     0     0>;
     };
 
-    trackball_listener {
+    trackball_listener: trackball_listener {
         compatible = "zmk,input-listener";
         device = <&trackball>;
 
