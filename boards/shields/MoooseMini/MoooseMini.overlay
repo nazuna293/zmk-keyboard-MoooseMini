@@ -31,11 +31,11 @@
     };
 };
 
-&xiao_serial { status = "disabled"; };
-
 &right_encoder {
     status = "okay";
 };
+
+&xiao_serial { status = "disabled"; };
 
 &spi0 {
     status = "okay";
