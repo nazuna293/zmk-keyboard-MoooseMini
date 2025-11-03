@@ -23,18 +23,15 @@
         display-name = "Default";
         transform = <&default_transform>;
         kscan = <&kscan0>;
-
-        keys  //                     w   h    x    y     rot    rx    ry
-            = <&key_physical_attrs 100 100    0    0       0     0     0>
-            , <&key_physical_attrs 100 100  300    0       0     0     0>
-            , <&key_physical_attrs 100 100    0  100       0     0     0>
-            , <&key_physical_attrs 100 100  100  100       0     0     0>
-            , <&key_physical_attrs 100 100  300  100       0     0     0>
-            , <&key_physical_attrs 100 100    0  200       0     0     0>
-            , <&key_physical_attrs 100 100  100  200       0     0     0>
-            , <&key_physical_attrs 100 100  300  200       0     0     0>
-            , <&key_physical_attrs  75  75  250  300       0     0     0>
-            ;
+        keys = <&key_physical_attrs 100 100    0    0       0     0     0>,
+               <&key_physical_attrs 100 100  300    0       0     0     0>,
+               <&key_physical_attrs 100 100    0  100       0     0     0>,
+               <&key_physical_attrs 100 100  100  100       0     0     0>,
+               <&key_physical_attrs 100 100  300  100       0     0     0>,
+               <&key_physical_attrs 100 100    0  200       0     0     0>,
+               <&key_physical_attrs 100 100  100  200       0     0     0>,
+               <&key_physical_attrs 100 100  300  200       0     0     0>,
+               <&key_physical_attrs  75  75  250  300       0     0     0>;
     };
 
     trackball_listener {
@@ -76,16 +73,12 @@
         compatible = "zmk,kscan-gpio-matrix";
         label = "KSCAN";
         diode-direction = "col2row";
-        row-gpios
-            = <&xiao_d 1 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> //Row0
-            , <&xiao_d 2 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> //Row1
-            , <&xiao_d 3 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> //Row2
-            ;
-        col-gpios
-            = <&xiao_d 7 GPIO_ACTIVE_HIGH> //Col0
-            , <&xiao_d 8 GPIO_ACTIVE_HIGH> //Col1
-            , <&xiao_d 9 GPIO_ACTIVE_HIGH> //Col2
-            ;
+        row-gpios = <&xiao_d 1 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,
+                    <&xiao_d 2 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,
+                    <&xiao_d 3 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>;
+        col-gpios = <&xiao_d 7 GPIO_ACTIVE_HIGH>,
+                    <&xiao_d 8 GPIO_ACTIVE_HIGH>,
+                    <&xiao_d 9 GPIO_ACTIVE_HIGH>;
     };
 
     right_encoder: encoder_right {
@@ -105,4 +98,3 @@
 
 &xiao_i2c { status = "disabled"; };
 &xiao_serial { status = "disabled"; };
-
