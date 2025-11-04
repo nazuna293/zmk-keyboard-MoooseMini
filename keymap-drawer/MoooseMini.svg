@@ -185,6 +185,12 @@ path.combo {
 <a href="#x_x">
 <text x="0" y="16" class="key hold layer-activator">4</text>
 </a></g>
+<g class="combo combopos-0">
+<path d="M224,84 l20,-39" class="combo"/>
+<path d="M224,84 l-20,39" class="combo"/>
+<rect rx="6" ry="6" x="210" y="71" width="28" height="26" class="combo"/>
+<text x="224" y="84" class="combo tap"><tspan style="font-size: 64%">&amp;bootloader</tspan></text>
+</g>
 </g>
 </g>
 <g transform="translate(30, 272)" class="layer-1">
