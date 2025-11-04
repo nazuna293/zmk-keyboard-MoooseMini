@@ -54,3 +54,5 @@ combos:
 - p: [4, 1, 7]
   k: '&bootloader'
   l: [default]
+- p: [7, 4]
+  k: '4'
