@@ -65,9 +65,7 @@
     quick-tap-ms = <0>;
 };
 
-&trackball {
-    cpi = <600>;
-};
+&trackball { cpi = <600>; };
 
 &trackball_listener {
     snipe_1 {
@@ -159,8 +157,8 @@
         default_layer {
             bindings = <
 &kp C_MUTE            &lt_to_layer_0 1 ESC
-&mkp LCLK             &mkp RCLK             &lt_to_layer_0 2 ENTER
-&mkp MCLK             &kp BACKSPACE         &lt_to_layer_0 3 SPACE
+&mkp MB1              &mkp MB2              &lt_to_layer_0 2 ENTER
+&mkp MB3              &kp BACKSPACE         &lt_to_layer_0 3 SPACE
 &lt_to_layer_0 4 ESC
             >;
 
