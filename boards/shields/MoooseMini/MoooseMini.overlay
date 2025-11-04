@@ -1,7 +1,7 @@
 #include <zephyr/dt-bindings/input/input-event-codes.h>
 #include "MoooseMini.dtsi"
 
-/{
+/ {
     chosen {
         zmk,physical-layout = &MoooseMini_physical_layout;
     };
@@ -39,4 +39,5 @@
         // force-awake;
         disable-burst-read;
     };
+
 };
