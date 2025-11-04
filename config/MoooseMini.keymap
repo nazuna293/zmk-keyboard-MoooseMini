@@ -147,6 +147,11 @@
             key-positions = <4 1 7>;
             layers = <0>;
         };
+
+        setting {
+            bindings = <&mo 4>;
+            key-positions = <7 4>;
+        };
     };
 
     keymap {
