@@ -64,7 +64,7 @@
     swap-xy;
 };
 
-&trackball-listener {
+&trackball_listener {
         snipe_1 {
             layers = <UPPER>;
             input-processors = <&zip_xy_scaler 1 3>;
