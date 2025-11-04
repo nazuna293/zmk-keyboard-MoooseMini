@@ -69,8 +69,6 @@
 
 &xiao_i2c { status = "disabled"; };
 
-&xiao_serial { status = "disabled"; };
-
 &pinctrl {
     spi0_default: spi0_default {
         group1 {
@@ -89,4 +87,5 @@
         };
     };
 };
+
 
