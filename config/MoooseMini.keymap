@@ -11,14 +11,7 @@
 #include <scroll-snap.dtsi>
 
 #undef ZMK_POINTING_DEFAULT_SCRL_VAL
-#define ZMK_POINTING_DEFAULT_SCRL_VAL 100  // スクロール量を10→100に変更
-
-// Leyer
-
-#define UPPER 1
-#define MID 2
-#define LOWER 3
-#define TACT 4
+#define ZMK_POINTING_DEFAULT_SCRL_VAL 50  // スクロール量を10→100に変更
 
 &mt {
     flavor = "balanced";
@@ -26,7 +19,7 @@
 };
 
 &trackball {
-    cpi = <700>;
+    cpi = <800>;
     swap-xy;
 };
 
@@ -234,8 +227,8 @@
         default_layer {
             bindings = <
 &kp C_MUTE                 &lt_to_layer_0 1 ESC
-&lt 2 BACKSPACE  &mkp MB3  &lt_to_layer_0 2 ENTER
-&mkp MB1         &mkp MB2  &lt_to_layer_0 3 SPACE
+&mkp MB1         &mkp MB2  &lt_to_layer_0 2 ENTER
+&lt 2 BACKSPACE  &mkp MB3  &lt_to_layer_0 3 SPACE
                            &lt_to_layer_0 4 ESC
             >;
 
