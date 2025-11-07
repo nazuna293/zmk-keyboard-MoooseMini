@@ -47,7 +47,6 @@
     scroller {
         layers = <2>;
         input-processors = <
-          &zip_xy_transform (INPUT_TRANSFORM_X_INVERT | INPUT_TRANSFORM_Y_INVERT)
           &zip_xy_to_scroll_mapper
           &zip_scroll_snap
         >;
@@ -137,7 +136,7 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             label = "GESTURE";
-            bindings = <&mouse_gesture_kp>;
+            bindings = <&macro_tap &mouse_gesture>;
         };
     };
 
@@ -241,7 +240,7 @@
             bindings = <
 &kp C_MUTE            &lt_to_layer_0 1 ESC
 &mkp MB1    &mkp MB2  &lt_to_layer_0 2 ENTER
-&gesture    &mkp MB3  &lt_to_layer_0 3 SPACE
+&mouse_gesture    &mkp MB3  &lt_to_layer_0 3 SPACE
                       &lt_to_layer_0 4 ESC
             >;
 
