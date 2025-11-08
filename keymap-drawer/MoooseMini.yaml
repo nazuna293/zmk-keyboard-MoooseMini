@@ -9,10 +9,10 @@ layers:
   - '&mouse_gesture'
   - '&mkp MB3'
   - {t: '&to_layer_0 SPACE', h: LOWER}
-  - {t: '&to_layer_0 ESC', h: TACT}
+  - TACT
   UPPER:
   - '1'
-  - {t: ESC, type: held}
+  - {t: none, type: held}
   - Ctl+Sft+TAB
   - Ctl+T
   - ENTER
@@ -25,7 +25,7 @@ layers:
   - ESC
   - LEFT
   - UP
-  - {t: ENTER, type: held}
+  - {t: none, type: held}
   - DOWN
   - RIGHT
   - SPACE
@@ -38,7 +38,7 @@ layers:
   - ENTER
   - Gui+DOWN
   - Gui+RIGHT
-  - {t: SPACE, type: held}
+  - {t: none, type: held}
   - ''
   TACT:
   - '&bootloader'
@@ -50,9 +50,3 @@ layers:
   - {t: BT, h: '5'}
   - {t: BT, h: '3'}
   - {type: held}
-combos:
-- p: [4, 1, 7]
-  k: '&bootloader'
-  l: [default]
-- p: [7, 4]
-  k: TACT
