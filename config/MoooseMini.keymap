@@ -138,7 +138,7 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             label = "GESTURE";
-            bindings = <&macro_tap &mouse_gesture>;
+            bindings = <&macro_tap>, <&mouse_gesture>;
         };
     };
 
@@ -227,7 +227,7 @@
             bindings = <
 &kp C_MUTE            &lt_to_layer_0 1 ESC
 &mkp MB1    &mkp MB2  &lt_to_layer_0 2 ENTER
-&mouse_gesture    &mkp MB3  &lt_to_layer_0 3 SPACE
+&gesture    &mkp MB3  &lt_to_layer_0 3 SPACE
                       &mo 4
             >;
 
