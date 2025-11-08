@@ -47,7 +47,7 @@
     scroller {
         layers = <2>;
         input-processors = <
-          &zip_xy_scaler 1 5
+          &zip_xy_scaler 1 8
           &zip_xy_transform (INPUT_TRANSFORM_Y_INVERT)
           &zip_xy_to_scroll_mapper
           &zip_scroll_snap
@@ -60,8 +60,8 @@
 // mouse-gesture
 
 &zip_mouse_gesture {
-    stroke-size = <300>; // Optional (default: 500)
-    enable-eager-mode; // Optional, but recommended
+    stroke-size = <200>; // Optional (default: 200)
+    // enable-eager-mode; // Optional, but recommended
 
     left {
         pattern = <GESTURE_LEFT>;
