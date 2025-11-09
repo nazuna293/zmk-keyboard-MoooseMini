@@ -62,7 +62,6 @@
 &zip_mouse_gesture {
     stroke-size = <100>; // Optional (default: 200)
     enable-eager-mode; // Optional, but recommended
-
     left {
         pattern = <GESTURE_LEFT>;
         bindings = <&kp LEFT_ARROW>;
@@ -136,9 +135,8 @@
         gesture: gesture {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = 
-                <&macro_tap>,
-                <&mouse_gesture>;
+            bindings = <&macro_tap>, <&mouse_gesture>;
+
             label = "GESTURE";
         };
     };
@@ -224,12 +222,12 @@
     keymap {
         compatible = "zmk,keymap";
 
-        default_layer {
+        DEFAULT {
             bindings = <
-&kp C_MUTE            &lt_to_layer_0 1 ESC
-&mkp MB1    &mkp MB2  &lt_to_layer_0 2 ENTER
-&mouse_gesture    &mkp MB3  &lt_to_layer_0 3 SPACE
-                      &mo 4
+&kp C_MUTE                &lt_to_layer_0 1 ESC
+&mkp MB1        &mkp MB2  &lt_to_layer_0 2 ENTER
+&mouse_gesture  &mkp MB3  &lt_to_layer_0 3 SPACE
+                          &mo 4
             >;
 
             sensor-bindings = <&mouse_scroll SCRL_DOWN SCRL_UP>;
@@ -271,8 +269,8 @@
         TACT {
             bindings = <
 &bootloader                   &bt BT_SEL 1
-&bt BT_CLR_ALL  &bt BT_SEL 4  &bt BT_SEL 2
-&bt BT_CLR      &bt BT_SEL 5  &bt BT_SEL 3
+&sys_reset      &bt BT_SEL 4  &bt BT_SEL 2
+&bt BT_CLR_ALL  &bt BT_SEL 5  &bt BT_SEL 3
                               &none
             >;
 
