@@ -289,10 +289,10 @@
 
         toALT {
             bindings = <
-&kp F4                           &trans
-&kp LS(TAB)     &kp TAB          &trans
-&kp LEFT_ARROW  &kp RIGHT_ARROW  &trans
-                                 &trans
+&kp F4                           &none
+&kp LS(TAB)     &kp TAB          &none
+&kp LEFT_ARROW  &kp RIGHT_ARROW  &none
+                                 &none
             >;
         };
     };
