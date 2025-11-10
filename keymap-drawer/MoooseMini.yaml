@@ -51,13 +51,13 @@ layers:
   - {t: BT, h: '3'}
   - {type: held}
   toALT:
-  - {t: ▽, type: trans}
+  - F4
   - {type: held}
   - Sft+TAB
   - TAB
   - {type: held}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - LEFT ARROW
+  - RIGHT ARROW
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
 combos:
