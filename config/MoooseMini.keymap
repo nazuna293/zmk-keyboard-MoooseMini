@@ -20,7 +20,7 @@
 };
 
 &trackball {
-    cpi = <800>;
+    cpi = <600>;
     swap-xy;
 };
 
@@ -47,7 +47,7 @@
     scroller {
         layers = <2>;
         input-processors = <
-          &zip_xy_scaler 1 32
+          &zip_xy_scaler 1 24
           &zip_xy_transform (INPUT_TRANSFORM_Y_INVERT)
           &zip_xy_to_scroll_mapper
           &zip_scroll_snap
